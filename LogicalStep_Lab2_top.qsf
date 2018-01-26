@@ -288,4 +288,18 @@ set_global_assignment -name VHDL_FILE concatenate.vhdl
 set_global_assignment -name VHDL_FILE mux.vhd
 set_global_assignment -name VHDL_FILE add.vhd
 set_global_assignment -name VHDL_FILE concatenate.vhd
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name VHDL_FILE output_files/Logic_Processor.vhd
+set_global_assignment -name VHDL_FILE Logic_Processor.vhd
+set_global_assignment -name CDF_FILE output_files/Chain5.cdf
+set_global_assignment -name CDF_FILE output_files/Chain6.cdf
+set_global_assignment -name CDF_FILE output_files/Chain7.cdf
+set_global_assignment -name CDF_FILE output_files/Chain8.cdf
+set_global_assignment -name CDF_FILE output_files/Chain9.cdf
+set_global_assignment -name CDF_FILE output_files/Chain10.cdf
+set_global_assignment -name CDF_FILE output_files/Chain11.cdf
+set_global_assignment -name CDF_FILE output_files/Chain12.cdf
+set_global_assignment -name CDF_FILE output_files/Chain13.cdf
+set_global_assignment -name CDF_FILE output_files/Chain14.cdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name CDF_FILE output_files/Chain15.cdf

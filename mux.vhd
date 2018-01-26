@@ -15,10 +15,10 @@ end mux;
 
 architecture mux_logic of mux is
 
---
 begin
    
 hex_out <= hex_in1 when (mux_select = '0') else hex_in2;
 	
 	
 end mux_logic; 
+

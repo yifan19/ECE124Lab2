@@ -24,7 +24,7 @@ begin
    
 	--trying to add hexA to hexB
 	
-	output <= ("0000" & hexA) + ("0000" & hexB);
+	output(7 downto 0) <=std_logic_vector(unsigned("0000" & hexA) + unsigned("0000" & hexB));
 	
 
 	

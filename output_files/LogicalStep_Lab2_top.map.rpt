@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LogicalStep_Lab2_top
-Tue Jan 23 12:16:29 2018
+Fri Jan 26 17:54:52 2018
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +44,13 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 23 12:16:28 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 26 17:54:52 2018           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab2_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                            ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 45                                              ;
-;     Total combinational functions  ; 45                                              ;
+; Total logic elements               ; 64                                              ;
+;     Total combinational functions  ; 64                                              ;
 ;     Dedicated logic registers      ; 11                                              ;
 ; Total registers                    ; 11                                              ;
 ; Total pins                         ; 30                                              ;
@@ -177,53 +178,56 @@ agreement for further details.
 ; mux.vhd                          ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/mux.vhd                  ;         ;
 ; add.vhd                          ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/add.vhd                  ;         ;
 ; concatenate.vhd                  ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/concatenate.vhd          ;         ;
+; Logic_Processor.vhd              ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/Logic_Processor.vhd      ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 45             ;
-;                                             ;                ;
-; Total combinational functions               ; 45             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 14             ;
-;     -- 3 input functions                    ; 17             ;
-;     -- <=2 input functions                  ; 14             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 32             ;
-;     -- arithmetic mode                      ; 13             ;
-;                                             ;                ;
-; Total registers                             ; 11             ;
-;     -- Dedicated logic registers            ; 11             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 30             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; clkin_50~input ;
-; Maximum fan-out                             ; 11             ;
-; Total fan-out                               ; 192            ;
-; Average fan-out                             ; 1.66           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 64          ;
+;                                             ;             ;
+; Total combinational functions               ; 64          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 30          ;
+;     -- 3 input functions                    ; 18          ;
+;     -- <=2 input functions                  ; 16          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 51          ;
+;     -- arithmetic mode                      ; 13          ;
+;                                             ;             ;
+; Total registers                             ; 11          ;
+;     -- Dedicated logic registers            ; 11          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 30          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; pb[3]~input ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 268         ;
+; Average fan-out                             ; 1.99        ;
++---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+--------------+
-; |LogicalStep_Lab2_top      ; 45 (0)            ; 11 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |LogicalStep_Lab2_top                    ; work         ;
-;    |SevenSegment:INST1|    ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|SevenSegment:INST1 ; work         ;
-;    |SevenSegment:INST2|    ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|SevenSegment:INST2 ; work         ;
-;    |add:INST5|             ; 10 (10)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|add:INST5          ; work         ;
-;    |mux:INST6|             ; 3 (3)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|mux:INST6          ; work         ;
-;    |segment7_mux:INST3|    ; 18 (18)           ; 11 (11)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|segment7_mux:INST3 ; work         ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+
+; |LogicalStep_Lab2_top      ; 64 (0)            ; 11 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |LogicalStep_Lab2_top                       ; work         ;
+;    |Logic_Processor:INST7| ; 3 (3)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|Logic_Processor:INST7 ; work         ;
+;    |SevenSegment:INST1|    ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|SevenSegment:INST1    ; work         ;
+;    |SevenSegment:INST2|    ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|SevenSegment:INST2    ; work         ;
+;    |add:INST5|             ; 5 (5)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|add:INST5             ; work         ;
+;    |mux:INST6|             ; 8 (8)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|mux:INST6             ; work         ;
+;    |mux:INST8|             ; 16 (16)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|mux:INST8             ; work         ;
+;    |segment7_mux:INST3|    ; 18 (18)           ; 11 (11)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab2_top|segment7_mux:INST3    ; work         ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -242,6 +246,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |LogicalStep_Lab2_top|mux:INST8|hex_out[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -251,19 +264,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 11                          ;
 ;     plain             ; 11                          ;
 ; cycloneiii_io_obuf    ; 3                           ;
-; cycloneiii_lcell_comb ; 51                          ;
+; cycloneiii_lcell_comb ; 70                          ;
 ;     arith             ; 13                          ;
 ;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 5                           ;
-;     normal            ; 38                          ;
+;     normal            ; 57                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 14                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.40                        ;
-; Average LUT depth     ; 3.50                        ;
+; Average LUT depth     ; 3.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Tue Jan 23 12:16:14 2018
+    Info: Processing started: Fri Jan 26 17:54:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab2 -c LogicalStep_Lab2_top
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file logicalstep_lab2_top.vhd
@@ -305,38 +318,32 @@ Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file concatenate.vhd
     Info (12022): Found design unit 1: concatenate-Behavioral File: N:/ECE 124/Lab2/concatenate.vhd Line: 18
     Info (12023): Found entity 1: concatenate File: N:/ECE 124/Lab2/concatenate.vhd Line: 6
+Warning (12019): Can't analyze file -- file output_files/Logic_Processor.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file logic_processor.vhd
+    Info (12022): Found design unit 1: Logic_Processor-Behavioral File: N:/ECE 124/Lab2/Logic_Processor.vhd Line: 20
+    Info (12023): Found entity 1: Logic_Processor File: N:/ECE 124/Lab2/Logic_Processor.vhd Line: 6
 Info (12127): Elaborating entity "LogicalStep_Lab2_top" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab2_top.vhd(10): used implicit default value for signal "leds" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-Warning (10036): Verilog HDL or VHDL warning at LogicalStep_Lab2_top.vhd(78): object "operator" assigned a value but never read File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 78
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 101
-Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 103
-Info (12128): Elaborating entity "concatenate" for hierarchy "concatenate:INST4" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 104
-Info (12128): Elaborating entity "add" for hierarchy "add:INST5" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 105
-Info (12128): Elaborating entity "mux" for hierarchy "mux:INST6" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 106
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 107
+Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 109
+Info (12128): Elaborating entity "concatenate" for hierarchy "concatenate:INST4" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 110
+Info (12128): Elaborating entity "add" for hierarchy "add:INST5" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 111
+Info (12128): Elaborating entity "mux" for hierarchy "mux:INST6" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 112
+Info (12128): Elaborating entity "Logic_Processor" for hierarchy "Logic_Processor:INST7" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 117
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[0]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[1]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[2]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[3]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[4]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
     Warning (13410): Pin "leds[5]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
     Warning (13410): Pin "leds[6]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
     Warning (13410): Pin "leds[7]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "pb[0]" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "pb[1]" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "pb[2]" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 94 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 45 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info (21061): Implemented 64 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 857 megabytes
-    Info: Processing ended: Tue Jan 23 12:16:29 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Processing ended: Fri Jan 26 17:54:52 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
 
 

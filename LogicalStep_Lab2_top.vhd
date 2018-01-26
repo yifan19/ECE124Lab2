@@ -56,10 +56,15 @@ architecture SimpleCircuit of LogicalStep_Lab2_top is
 		);
 	end component;
 	
-	--component concatenate port (
-		--hex_A_c :  in std_logic_vector(3 downto 0);
-		--hex_B_c :  in std_logic_vector(3 downto 0);
-		--hex_out :  out std_logic_vector(7 downto 0) :=
+	component  Logic_Processor is port (
+   
+   hexA	   :  in  std_logic_vector(3 downto 0);   
+	hexB		:  in std_logic_vector(3 downto 0);
+	pressButton : in std_logic_vector ( 2 downto 0);
+	output	:	out std_logic_vector(7 downto 0)
+	
+	);
+	end component;
 
 		
 -- Create any signals, or temporary variables to be used
@@ -75,22 +80,23 @@ architecture SimpleCircuit of LogicalStep_Lab2_top is
 	signal concatenationResult : std_logic_vector(7 downto 0);
 	signal sumResult: std_logic_vector(7 downto 0);
 	
-	signal operator	: std_logic_vector(3 downto 0);
+	--signal operator	: std_logic_vector(3 downto 0);
 	signal logical_result	:	std_logic_vector(3 downto 0);
 	signal arithmetic_result	:	std_logic_vector(7 downto 0);
 	
 	
-	signal addPushButton : std_logic;
-		
+	signal revertPushButton : std_logic_vector(3 downto 0);
+	
+	signal logicOutput: std_logic_vector (7 downto 0);
+	
 -- Here the circuit begins
 
 begin
 
 	hex_A <= sw(3 downto 0);
 	hex_B <= sw(7 downto 4);
-	operator <= pb(3 downto 0);
-	
-	addPushButton <= not pb(3); 
+	--operator <= pb(3 downto 0);
+	 
 	
 	--logical_result <= 
 
@@ -98,11 +104,18 @@ begin
 	
 
 
-	INST1: SevenSegment port map(arithmetic_Result(3 downto 0), seg7_A);
-	INST2: SevenSegment port map(arithmetic_Result(7 downto 4), seg7_B);
-	INST3: segment7_mux port map(clkin_50, seg7_A, seg7_B,  seg7_data, seg7_char2, seg7_char1);
-	INST4: concatenate port map( hex_A, hex_B, concatenationResult);
+	INST1: SevenSegment port map(arithmetic_Result(7 downto 4), seg7_A);
+	INST2: SevenSegment port map(arithmetic_Result(3 downto 0), seg7_B);
+	INST3: segment7_mux port map(clkin_50, seg7_B, seg7_A,  seg7_data, seg7_char2, seg7_char1);
+	INST4: concatenate port map( hex_B, hex_A, concatenationResult); -- swapped because of flipped display
 	INST5: add port map( hex_B, hex_A, sumResult);
-	INST6: mux port map(concatenationResult, sumResult, addPushButton, arithmetic_Result);
+	INST6: mux port map(concatenationResult, sumResult, not pb(3), arithmetic_Result);
+	
+	
+	
+	
+	INST7: Logic_Processor port map(hex_A, hex_B, pb (2 downto 0), logicOutput); -- reverted at the lower level
+	INST8: mux port map(sumResult, logicOutput, pb(3), leds);  
+	
 end SimpleCircuit;
 
