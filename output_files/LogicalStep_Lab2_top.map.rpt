@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LogicalStep_Lab2_top
-Fri Jan 26 17:54:52 2018
+Fri Jan 26 18:07:32 2018
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 26 17:54:52 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 26 18:07:32 2018           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab2_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                            ;
@@ -167,19 +167,19 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                    ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; LogicalStep_Lab2_top.vhd         ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd ;         ;
-; segment7_mux.vhd                 ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/segment7_mux.vhd         ;         ;
-; SevenSegment.vhd                 ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/SevenSegment.vhd         ;         ;
-; mux.vhd                          ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/mux.vhd                  ;         ;
-; add.vhd                          ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/add.vhd                  ;         ;
-; concatenate.vhd                  ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/concatenate.vhd          ;         ;
-; Logic_Processor.vhd              ; yes             ; User VHDL File  ; N:/ECE 124/Lab2/Logic_Processor.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
+; LogicalStep_Lab2_top.vhd         ; yes             ; User VHDL File  ; N:/ECE124Lab2/LogicalStep_Lab2_top.vhd ;         ;
+; segment7_mux.vhd                 ; yes             ; User VHDL File  ; N:/ECE124Lab2/segment7_mux.vhd         ;         ;
+; SevenSegment.vhd                 ; yes             ; User VHDL File  ; N:/ECE124Lab2/SevenSegment.vhd         ;         ;
+; mux.vhd                          ; yes             ; User VHDL File  ; N:/ECE124Lab2/mux.vhd                  ;         ;
+; add.vhd                          ; yes             ; User VHDL File  ; N:/ECE124Lab2/add.vhd                  ;         ;
+; concatenate.vhd                  ; yes             ; User VHDL File  ; N:/ECE124Lab2/concatenate.vhd          ;         ;
+; Logic_Processor.vhd              ; yes             ; User VHDL File  ; N:/ECE124Lab2/Logic_Processor.vhd      ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -192,8 +192,8 @@ agreement for further details.
 ; Total combinational functions               ; 64          ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 30          ;
-;     -- 3 input functions                    ; 18          ;
-;     -- <=2 input functions                  ; 16          ;
+;     -- 3 input functions                    ; 20          ;
+;     -- <=2 input functions                  ; 14          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
 ;     -- normal mode                          ; 51          ;
@@ -208,9 +208,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; pb[3]~input ;
-; Maximum fan-out                             ; 13          ;
-; Total fan-out                               ; 268         ;
-; Average fan-out                             ; 1.99        ;
+; Maximum fan-out                             ; 16          ;
+; Total fan-out                               ; 273         ;
+; Average fan-out                             ; 2.02        ;
 +---------------------------------------------+-------------+
 
 
@@ -264,19 +264,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 11                          ;
 ;     plain             ; 11                          ;
 ; cycloneiii_io_obuf    ; 3                           ;
-; cycloneiii_lcell_comb ; 70                          ;
+; cycloneiii_lcell_comb ; 69                          ;
 ;     arith             ; 13                          ;
 ;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 5                           ;
-;     normal            ; 57                          ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 56                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 13                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 15                          ;
 ;         4 data inputs ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.40                        ;
-; Average LUT depth     ; 3.54                        ;
+; Average LUT depth     ; 3.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,44 +295,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Fri Jan 26 17:54:38 2018
+    Info: Processing started: Fri Jan 26 18:07:17 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab2 -c LogicalStep_Lab2_top
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file logicalstep_lab2_top.vhd
-    Info (12022): Found design unit 1: LogicalStep_Lab2_top-SimpleCircuit File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 18
-    Info (12023): Found entity 1: LogicalStep_Lab2_top File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 6
+    Info (12022): Found design unit 1: LogicalStep_Lab2_top-SimpleCircuit File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 18
+    Info (12023): Found entity 1: LogicalStep_Lab2_top File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file segment7_mux.vhd
-    Info (12022): Found design unit 1: segment7_mux-syn File: N:/ECE 124/Lab2/segment7_mux.vhd Line: 67
-    Info (12023): Found entity 1: segment7_mux File: N:/ECE 124/Lab2/segment7_mux.vhd Line: 52
+    Info (12022): Found design unit 1: segment7_mux-syn File: N:/ECE124Lab2/segment7_mux.vhd Line: 67
+    Info (12023): Found entity 1: segment7_mux File: N:/ECE124Lab2/segment7_mux.vhd Line: 52
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: SevenSegment-Behavioral File: N:/ECE 124/Lab2/SevenSegment.vhd Line: 18
-    Info (12023): Found entity 1: SevenSegment File: N:/ECE 124/Lab2/SevenSegment.vhd Line: 10
+    Info (12022): Found design unit 1: SevenSegment-Behavioral File: N:/ECE124Lab2/SevenSegment.vhd Line: 18
+    Info (12023): Found entity 1: SevenSegment File: N:/ECE124Lab2/SevenSegment.vhd Line: 10
 Warning (12019): Can't analyze file -- file concatenate.vhdl is missing
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: N:/ECE 124/Lab2/mux.vhd Line: 6
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: N:/ECE124Lab2/mux.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-mux_logic File: N:/ECE 124/Lab2/mux.vhd Line: 16
-    Info (12023): Found entity 1: mux File: N:/ECE 124/Lab2/mux.vhd Line: 6
+    Info (12022): Found design unit 1: mux-mux_logic File: N:/ECE124Lab2/mux.vhd Line: 16
+    Info (12023): Found entity 1: mux File: N:/ECE124Lab2/mux.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
-    Info (12022): Found design unit 1: add-Behavioral File: N:/ECE 124/Lab2/add.vhd Line: 19
-    Info (12023): Found entity 1: add File: N:/ECE 124/Lab2/add.vhd Line: 7
+    Info (12022): Found design unit 1: add-Behavioral File: N:/ECE124Lab2/add.vhd Line: 19
+    Info (12023): Found entity 1: add File: N:/ECE124Lab2/add.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file concatenate.vhd
-    Info (12022): Found design unit 1: concatenate-Behavioral File: N:/ECE 124/Lab2/concatenate.vhd Line: 18
-    Info (12023): Found entity 1: concatenate File: N:/ECE 124/Lab2/concatenate.vhd Line: 6
+    Info (12022): Found design unit 1: concatenate-Behavioral File: N:/ECE124Lab2/concatenate.vhd Line: 18
+    Info (12023): Found entity 1: concatenate File: N:/ECE124Lab2/concatenate.vhd Line: 6
 Warning (12019): Can't analyze file -- file output_files/Logic_Processor.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file logic_processor.vhd
-    Info (12022): Found design unit 1: Logic_Processor-Behavioral File: N:/ECE 124/Lab2/Logic_Processor.vhd Line: 20
-    Info (12023): Found entity 1: Logic_Processor File: N:/ECE 124/Lab2/Logic_Processor.vhd Line: 6
+    Info (12022): Found design unit 1: Logic_Processor-Behavioral File: N:/ECE124Lab2/Logic_Processor.vhd Line: 20
+    Info (12023): Found entity 1: Logic_Processor File: N:/ECE124Lab2/Logic_Processor.vhd Line: 6
 Info (12127): Elaborating entity "LogicalStep_Lab2_top" for the top level hierarchy
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 107
-Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 109
-Info (12128): Elaborating entity "concatenate" for hierarchy "concatenate:INST4" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 110
-Info (12128): Elaborating entity "add" for hierarchy "add:INST5" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 111
-Info (12128): Elaborating entity "mux" for hierarchy "mux:INST6" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 112
-Info (12128): Elaborating entity "Logic_Processor" for hierarchy "Logic_Processor:INST7" File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 117
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[5]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[6]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
-    Warning (13410): Pin "leds[7]" is stuck at GND File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 10
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 107
+Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 109
+Info (12128): Elaborating entity "concatenate" for hierarchy "concatenate:INST4" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 110
+Info (12128): Elaborating entity "add" for hierarchy "add:INST5" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 111
+Info (12128): Elaborating entity "mux" for hierarchy "mux:INST6" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 112
+Info (12128): Elaborating entity "Logic_Processor" for hierarchy "Logic_Processor:INST7" File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 117
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -340,10 +336,10 @@ Info (21057): Implemented 94 device resources after synthesis - the final resour
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 64 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 857 megabytes
-    Info: Processing ended: Fri Jan 26 17:54:52 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Processing ended: Fri Jan 26 18:07:32 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 

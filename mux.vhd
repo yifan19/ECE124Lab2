@@ -22,3 +22,6 @@ hex_out <= hex_in1 when (mux_select = '0') else hex_in2;
 	
 end mux_logic; 
 
+
+-- if the button is pressed (at active low), select first one
+-- else select next one;

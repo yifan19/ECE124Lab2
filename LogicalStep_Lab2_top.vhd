@@ -109,7 +109,7 @@ begin
 	INST3: segment7_mux port map(clkin_50, seg7_B, seg7_A,  seg7_data, seg7_char2, seg7_char1);
 	INST4: concatenate port map( hex_B, hex_A, concatenationResult); -- swapped because of flipped display
 	INST5: add port map( hex_B, hex_A, sumResult);
-	INST6: mux port map(concatenationResult, sumResult, not pb(3), arithmetic_Result);
+	INST6: mux port map(sumResult, concatenationResult, pb(3), arithmetic_Result);
 	
 	
 	

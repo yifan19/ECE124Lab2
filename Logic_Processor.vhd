@@ -24,14 +24,15 @@ signal operator : std_logic_vector(2 downto 0);
 
 begin
 
-operator <= not pressButton(2) & not pressButton(1) & not pressButton(0);
+operator <= not pressButton;
 	
 	
 	with operator select
 	output<= "0000" & (hexA and hexB) when "001",
 				"0000" & (hexA or hexB) when "010",
 				"0000" & (hexA xor hexB) when "100",
-				"00000000" when others;
+				"00000000" when "000",
+				"11111111" when others;
 
 	
 	

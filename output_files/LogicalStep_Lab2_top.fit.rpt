@@ -1,5 +1,5 @@
 Fitter report for LogicalStep_Lab2_top
-Fri Jan 26 17:55:04 2018
+Fri Jan 26 18:07:43 2018
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -67,7 +67,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jan 26 17:55:04 2018           ;
+; Fitter Status                      ; Successful - Fri Jan 26 18:07:43 2018           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab2_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                            ;
@@ -363,7 +363,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_top.pin.
+The pin-out file can be found in N:/ECE124Lab2/output_files/LogicalStep_Lab2_top.pin.
 
 
 +--------------------------------------------------------------------+
@@ -378,8 +378,8 @@ The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_t
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
 ;     -- 4 input functions                    ; 30                   ;
-;     -- 3 input functions                    ; 18                   ;
-;     -- <=2 input functions                  ; 17                   ;
+;     -- 3 input functions                    ; 20                   ;
+;     -- <=2 input functions                  ; 15                   ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
@@ -411,10 +411,10 @@ The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_t
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0.3% / 0.2% / 0.4%   ;
 ; Peak interconnect usage (total/H/V)         ; 0.6% / 0.5% / 0.9%   ;
-; Maximum fan-out                             ; 13                   ;
-; Highest non-global fan-out                  ; 13                   ;
-; Total fan-out                               ; 275                  ;
-; Average fan-out                             ; 1.87                 ;
+; Maximum fan-out                             ; 16                   ;
+; Highest non-global fan-out                  ; 16                   ;
+; Total fan-out                               ; 280                  ;
+; Average fan-out                             ; 1.90                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -434,8 +434,8 @@ The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_t
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
 ;     -- 4 input functions                    ; 30                  ; 0                              ;
-;     -- 3 input functions                    ; 18                  ; 0                              ;
-;     -- <=2 input functions                  ; 17                  ; 0                              ;
+;     -- 3 input functions                    ; 20                  ; 0                              ;
+;     -- <=2 input functions                  ; 15                  ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
@@ -464,7 +464,7 @@ The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_t
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 279                 ; 4                              ;
+;     -- Total Connections                    ; 284                 ; 4                              ;
 ;     -- Registered Connections               ; 21                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -498,18 +498,18 @@ The pin-out file can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_t
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; clkin_50 ; 29    ; 2        ; 0            ; 6            ; 21           ; 11                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; pb[0]    ; 46    ; 3        ; 9            ; 0            ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; pb[1]    ; 45    ; 3        ; 9            ; 0            ; 21           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; pb[2]    ; 44    ; 3        ; 9            ; 0            ; 28           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; pb[3]    ; 43    ; 3        ; 6            ; 0            ; 14           ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; pb[0]    ; 46    ; 3        ; 9            ; 0            ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; pb[1]    ; 45    ; 3        ; 9            ; 0            ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; pb[2]    ; 44    ; 3        ; 9            ; 0            ; 28           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; pb[3]    ; 43    ; 3        ; 6            ; 0            ; 14           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 ; sw[0]    ; 30    ; 2        ; 0            ; 5            ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 ; sw[1]    ; 13    ; 1A       ; 10           ; 19           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 ; sw[2]    ; 14    ; 1A       ; 10           ; 19           ; 21           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 ; sw[3]    ; 11    ; 1A       ; 10           ; 20           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 ; sw[4]    ; 8     ; 1A       ; 10           ; 21           ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; sw[5]    ; 6     ; 1A       ; 10           ; 22           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; sw[6]    ; 39    ; 3        ; 3            ; 0            ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
-; sw[7]    ; 141   ; 8        ; 1            ; 10           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; sw[5]    ; 6     ; 1A       ; 10           ; 22           ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; sw[6]    ; 39    ; 3        ; 3            ; 0            ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
+; sw[7]    ; 141   ; 8        ; 1            ; 10           ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVCMOS ; --                        ; User                 ; 0         ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -764,18 +764,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg7_data[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg7_char1   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg7_char2   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; pb[3]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; sw[4]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; sw[0]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
-; pb[3]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; pb[2]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; pb[0]        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; pb[1]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; sw[1]        ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
+; pb[0]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; pb[1]        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; sw[5]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
-; sw[2]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; sw[1]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; sw[6]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; sw[2]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; sw[7]        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; sw[3]        ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
-; sw[7]        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; clkin_50     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -785,20 +785,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                 ; Pad To Core Index ; Setting ;
 +-------------------------------------+-------------------+---------+
-; sw[4]                               ;                   ;         ;
-;      - add:INST5|output[0]~0        ; 0                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~0 ; 0                 ; 6       ;
-;      - mux:INST6|hex_out[4]~4       ; 0                 ; 6       ;
-; sw[0]                               ;                   ;         ;
-;      - add:INST5|output[0]~0        ; 0                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~0 ; 0                 ; 6       ;
-;      - mux:INST6|hex_out[0]~0       ; 0                 ; 6       ;
 ; pb[3]                               ;                   ;         ;
-;      - mux:INST8|hex_out[1]~0       ; 0                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~1 ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~1       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~3       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[4]~9       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~6       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~7       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[5]~17      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[4]~18      ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[0]~0       ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[1]~1       ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[2]~2       ; 0                 ; 6       ;
@@ -807,62 +798,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux:INST6|hex_out[5]~5       ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[6]~6       ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[7]~7       ; 0                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~4 ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~19      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~20      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~21      ; 0                 ; 6       ;
+; sw[4]                               ;                   ;         ;
+;      - add:INST5|output[0]~0        ; 0                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~2 ; 0                 ; 6       ;
+;      - mux:INST6|hex_out[4]~4       ; 0                 ; 6       ;
+; sw[0]                               ;                   ;         ;
+;      - add:INST5|output[0]~0        ; 0                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~2 ; 0                 ; 6       ;
+;      - mux:INST6|hex_out[0]~0       ; 0                 ; 6       ;
 ; pb[2]                               ;                   ;         ;
-;      - mux:INST8|hex_out[1]~0       ; 0                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~1 ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~1       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~3       ; 0                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~3 ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~6       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~7       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[5]~17      ; 0                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~4 ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~19      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~20      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~21      ; 0                 ; 6       ;
 ; pb[0]                               ;                   ;         ;
-;      - Logic_Processor:INST7|Mux3~0 ; 1                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~1 ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~1       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~2       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[2]~5       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[3]~7       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[3]~10      ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[3]~11      ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[2]~12      ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[2]~13      ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~14      ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~15      ; 1                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~3 ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~6       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[5]~17      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~19      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~20      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~21      ; 0                 ; 6       ;
 ; pb[1]                               ;                   ;         ;
-;      - Logic_Processor:INST7|Mux3~0 ; 0                 ; 6       ;
-;      - Logic_Processor:INST7|Mux3~1 ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~1       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~2       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~3       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[2]~5       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[3]~7       ; 0                 ; 6       ;
-; sw[1]                               ;                   ;         ;
-;      - add:INST5|output[1]~2        ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~2       ; 1                 ; 6       ;
-;      - mux:INST6|hex_out[1]~1       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[1]~14      ; 1                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~2 ; 1                 ; 6       ;
+;      - Logic_Processor:INST7|Mux7~3 ; 1                 ; 6       ;
+;      - mux:INST8|hex_out[1]~6       ; 1                 ; 6       ;
+;      - mux:INST8|hex_out[1]~7       ; 1                 ; 6       ;
+;      - mux:INST8|hex_out[5]~17      ; 1                 ; 6       ;
 ; sw[5]                               ;                   ;         ;
 ;      - add:INST5|output[1]~2        ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~2       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~8       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~9       ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[5]~5       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[1]~15      ; 0                 ; 6       ;
-; sw[2]                               ;                   ;         ;
-;      - add:INST5|output[2]~4        ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[2]~5       ; 0                 ; 6       ;
-;      - mux:INST6|hex_out[2]~2       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[2]~12      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~19      ; 0                 ; 6       ;
+; sw[1]                               ;                   ;         ;
+;      - add:INST5|output[1]~2        ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~8       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[1]~9       ; 0                 ; 6       ;
+;      - mux:INST6|hex_out[1]~1       ; 0                 ; 6       ;
 ; sw[6]                               ;                   ;         ;
 ;      - add:INST5|output[2]~4        ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[2]~5       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~11      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~12      ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[6]~6       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[2]~13      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~20      ; 0                 ; 6       ;
+; sw[2]                               ;                   ;         ;
+;      - add:INST5|output[2]~4        ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~11      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[2]~12      ; 0                 ; 6       ;
+;      - mux:INST6|hex_out[2]~2       ; 0                 ; 6       ;
+; sw[7]                               ;                   ;         ;
+;      - add:INST5|output[3]~6        ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~14      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~15      ; 0                 ; 6       ;
+;      - mux:INST6|hex_out[7]~7       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~21      ; 0                 ; 6       ;
 ; sw[3]                               ;                   ;         ;
 ;      - add:INST5|output[3]~6        ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[3]~7       ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~14      ; 0                 ; 6       ;
+;      - mux:INST8|hex_out[3]~15      ; 0                 ; 6       ;
 ;      - mux:INST6|hex_out[3]~3       ; 0                 ; 6       ;
-;      - mux:INST8|hex_out[3]~10      ; 0                 ; 6       ;
-; sw[7]                               ;                   ;         ;
-;      - add:INST5|output[3]~6        ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[3]~7       ; 1                 ; 6       ;
-;      - mux:INST6|hex_out[7]~7       ; 1                 ; 6       ;
-;      - mux:INST8|hex_out[3]~11      ; 1                 ; 6       ;
 ; clkin_50                            ;                   ;         ;
 +-------------------------------------+-------------------+---------+
 
@@ -890,14 +892,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 64 / 27,275 ( < 1 % ) ;
+; Block interconnects   ; 66 / 27,275 ( < 1 % ) ;
 ; C16 interconnects     ; 13 / 1,240 ( 1 % )    ;
-; C4 interconnects      ; 45 / 20,832 ( < 1 % ) ;
-; Direct links          ; 13 / 27,275 ( < 1 % ) ;
+; C4 interconnects      ; 53 / 20,832 ( < 1 % ) ;
+; Direct links          ; 11 / 27,275 ( < 1 % ) ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
-; Local interconnects   ; 35 / 8,064 ( < 1 % )  ;
-; R24 interconnects     ; 8 / 1,320 ( < 1 % )   ;
-; R4 interconnects      ; 34 / 28,560 ( < 1 % ) ;
+; Local interconnects   ; 37 / 8,064 ( < 1 % )  ;
+; R24 interconnects     ; 9 / 1,320 ( < 1 % )   ;
+; R4 interconnects      ; 33 / 28,560 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
@@ -982,9 +984,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                               ; 1                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
-; 7                                               ; 1                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 1                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 2                           ;
+; 9                                               ; 0                           ;
 ; 10                                              ; 0                           ;
 ; 11                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
@@ -993,7 +995,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 9.00) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 8.60) ; Number of LABs  (Total = 5) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1002,14 +1004,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
+; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 1                           ;
+; 9                                           ; 2                           ;
+; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 2                           ;
+; 12                                          ; 1                           ;
+; 13                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1090,18 +1091,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg7_data[6]       ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg7_char1         ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg7_char2         ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; pb[3]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sw[4]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sw[0]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; pb[3]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; pb[2]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; pb[0]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; pb[1]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sw[1]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sw[5]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sw[2]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[1]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sw[6]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sw[3]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[2]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sw[7]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[3]              ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clkin_50           ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1172,7 +1173,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clkin_50~input (placed in PIN 29 (CLK1p, DIFFIO_RX_L20p, DIFFOUT_L20p, High_Speed)) File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 7
+Info (176353): Automatically promoted node clkin_50~input (placed in PIN 29 (CLK1p, DIFFIO_RX_L20p, DIFFOUT_L20p, High_Speed)) File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 7
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1265,19 +1266,19 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 13 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin sw[4] uses I/O standard 3.3-V LVCMOS at 8 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[0] uses I/O standard 3.3-V LVCMOS at 30 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin pb[3] uses I/O standard 3.3-V LVCMOS at 43 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Info (169178): Pin pb[2] uses I/O standard 3.3-V LVCMOS at 44 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Info (169178): Pin pb[0] uses I/O standard 3.3-V LVCMOS at 46 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Info (169178): Pin pb[1] uses I/O standard 3.3-V LVCMOS at 45 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 8
-    Info (169178): Pin sw[1] uses I/O standard 3.3-V LVCMOS at 13 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[5] uses I/O standard 3.3-V LVCMOS at 6 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[2] uses I/O standard 3.3-V LVCMOS at 14 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[6] uses I/O standard 3.3-V LVCMOS at 39 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[3] uses I/O standard 3.3-V LVCMOS at 11 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin sw[7] uses I/O standard 3.3-V LVCMOS at 141 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 9
-    Info (169178): Pin clkin_50 uses I/O standard 3.3-V LVCMOS at 29 File: N:/ECE 124/Lab2/LogicalStep_Lab2_top.vhd Line: 7
+    Info (169178): Pin pb[3] uses I/O standard 3.3-V LVCMOS at 43 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 8
+    Info (169178): Pin sw[4] uses I/O standard 3.3-V LVCMOS at 8 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[0] uses I/O standard 3.3-V LVCMOS at 30 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin pb[2] uses I/O standard 3.3-V LVCMOS at 44 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 8
+    Info (169178): Pin pb[0] uses I/O standard 3.3-V LVCMOS at 46 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 8
+    Info (169178): Pin pb[1] uses I/O standard 3.3-V LVCMOS at 45 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 8
+    Info (169178): Pin sw[5] uses I/O standard 3.3-V LVCMOS at 6 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[1] uses I/O standard 3.3-V LVCMOS at 13 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[6] uses I/O standard 3.3-V LVCMOS at 39 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[2] uses I/O standard 3.3-V LVCMOS at 14 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[7] uses I/O standard 3.3-V LVCMOS at 141 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin sw[3] uses I/O standard 3.3-V LVCMOS at 11 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 9
+    Info (169178): Pin clkin_50 uses I/O standard 3.3-V LVCMOS at 29 File: N:/ECE124Lab2/LogicalStep_Lab2_top.vhd Line: 7
 Warning (14579): Pin leds[2] uses I/O standard 3.3-V LVCMOS located at 17 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin leds[3] uses I/O standard 3.3-V LVCMOS located at 12 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin leds[4] uses I/O standard 3.3-V LVCMOS located at 10 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
@@ -1291,22 +1292,22 @@ Warning (14579): Pin seg7_data[6] uses I/O standard 3.3-V LVCMOS located at 136 
 Warning (14579): Pin seg7_char1 uses I/O standard 3.3-V LVCMOS located at 122 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin seg7_char2 uses I/O standard 3.3-V LVCMOS located at 120 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin sw[4] uses I/O standard 3.3-V LVCMOS located at 8 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
-Warning (14579): Pin sw[1] uses I/O standard 3.3-V LVCMOS located at 13 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin sw[5] uses I/O standard 3.3-V LVCMOS located at 6 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
+Warning (14579): Pin sw[1] uses I/O standard 3.3-V LVCMOS located at 13 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin sw[2] uses I/O standard 3.3-V LVCMOS located at 14 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
-Warning (14579): Pin sw[3] uses I/O standard 3.3-V LVCMOS located at 11 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Warning (14579): Pin sw[7] uses I/O standard 3.3-V LVCMOS located at 141 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
-Info (144001): Generated suppressed messages file N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_top.fit.smsg
+Warning (14579): Pin sw[3] uses I/O standard 3.3-V LVCMOS located at 11 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
+Info (144001): Generated suppressed messages file N:/ECE124Lab2/output_files/LogicalStep_Lab2_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 1448 megabytes
-    Info: Processing ended: Fri Jan 26 17:55:06 2018
+    Info: Peak virtual memory: 1478 megabytes
+    Info: Processing ended: Fri Jan 26 18:07:45 2018
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in N:/ECE 124/Lab2/output_files/LogicalStep_Lab2_top.fit.smsg.
+The suppressed messages can be found in N:/ECE124Lab2/output_files/LogicalStep_Lab2_top.fit.smsg.
 
 
