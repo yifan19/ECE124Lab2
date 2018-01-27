@@ -25,21 +25,21 @@ architecture SimpleCircuit of LogicalStep_Lab2_top is
    ); 
    end component;
 	
-	component concatenate port (
-		hexA	   :  in  std_logic_vector(3 downto 0);   
+	component concatenate port ( 
+		hexA	   :  in  std_logic_vector(3 downto 0);   -- concatenate hexA and hexB together
 		hexB		:  in std_logic_vector(3 downto 0);
 		output	:	out std_logic_vector(7 downto 0)
 	);
 	end component;
 	
 	component mux port (
-		hex_in1, hex_in2	: in std_logic_vector(7 downto 0);
+		hex_in1, hex_in2	: in std_logic_vector(7 downto 0); -- if selector button is pushed, 1 else 2
 		mux_select : in std_logic;
 		hex_out	:	out std_logic_vector(7 downto 0)
 		);
 	end component;
 
-	component segment7_mux port (
+	component segment7_mux port (	--- 
 		clk	: in  std_logic :='0';
 		DIN2	: in std_logic_vector(6 downto 0);
 		DIN1	: in std_logic_vector(6 downto 0);
@@ -49,14 +49,15 @@ architecture SimpleCircuit of LogicalStep_Lab2_top is
 		);
 	end component;
 	
-	component add port(
+	component add port( -- add hex A and hex B
 	   hexA	   :  in  std_logic_vector(3 downto 0);   
    	hexB		:  in std_logic_vector(3 downto 0);
 		output	:	out std_logic_vector(7 downto 0)
 		);
 	end component;
 	
-	component  Logic_Processor is port (
+	component  Logic_Processor is port (  
+	-- depending on which button is pressed, different logic operator is applied to hexA and hexB
    
    hexA	   :  in  std_logic_vector(3 downto 0);   
 	hexB		:  in std_logic_vector(3 downto 0);
@@ -102,19 +103,21 @@ begin
 
 	--seg7_data <= seg7_A;
 	
+	
+	------------------ the add (7 segment control)----------------------------
 
 
 	INST1: SevenSegment port map(arithmetic_Result(7 downto 4), seg7_A);
 	INST2: SevenSegment port map(arithmetic_Result(3 downto 0), seg7_B);
 	INST3: segment7_mux port map(clkin_50, seg7_B, seg7_A,  seg7_data, seg7_char2, seg7_char1);
-	INST4: concatenate port map( hex_B, hex_A, concatenationResult); -- swapped because of flipped display
+	INST4: concatenate port map( hex_B, hex_A, concatenationResult);
 	INST5: add port map( hex_B, hex_A, sumResult);
 	INST6: mux port map(sumResult, concatenationResult, pb(3), arithmetic_Result);
 	
 	
+	----------------------------------------- the led control --------------------
 	
-	
-	INST7: Logic_Processor port map(hex_A, hex_B, pb (2 downto 0), logicOutput); -- reverted at the lower level
+	INST7: Logic_Processor port map(hex_A, hex_B, pb (2 downto 0), logicOutput);
 	INST8: mux port map(sumResult, logicOutput, pb(3), leds);  
 	
 end SimpleCircuit;
